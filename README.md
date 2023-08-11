@@ -1,5 +1,5 @@
 ##### GoLang: The complete Developer's Guide #####
-* INTRODUCTION
+### *INTRODUCTION* ###
 1. Go is an open source programming language that Google developed. Software developers use Go in an array 
 of operating systems and frameworks to develop web applications, cloud and networking services, and other types of software.
 Go is statically typed, explicit and modeled after the C programming language. Because of Go language's fast startup time, 
@@ -18,4 +18,14 @@ with the go programming language by default.
 5. Receiver in Go is a special parameter in a method declaration that allows a type to define methods that can be called 
 on its instances. 
 
-* 
+### *NEW PROJECT* ###
+1. Create *main.go* & *deck.go*
+2. Run 
+> go run main.go deck.go
+3. Test
+~ Before start to test need to run 
+> go mod init <go_course> // <go_course>the name of working dir
+then
+> go test
+4. Test file IO
+
