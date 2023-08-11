@@ -1,7 +1,7 @@
 package main
- 
+
 import "fmt"
- 
+
 func printState() {
-    fmt.Println("California")
+	fmt.Println("California")
 }
