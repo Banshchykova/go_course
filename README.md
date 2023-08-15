@@ -29,12 +29,12 @@ on its instances.
 * then run
 > go test
 
-* Project "structs"
+* Structs
 1. Pointer operations
 > &variable - give the memory address of the value this variable in a pointing at
 > *pointer - give me the value this memory address is a pointing at
 Example:
-```yaml
+```go
 package main
 
 import "fmt"
@@ -69,8 +69,22 @@ func (pointerToPerson *person) updateName(newFirstName string) {
 func (p person) print() {
 	fmt.Printf("%+v", p)
 }
-
 ```
+* Maps
+# Map is a collection of key value pairs.
+Maps is that both the keys and the values are statically typed.
+So whenever we add some number of keys to a map and go, they must all be of the same exact type.
+And then all the different values that we add as well must also be of the exact same type.
+Now the keys and the values themselves don't have to be of the same type, just all the different values
+have to.
 
+* Diff Structs & Maps
+|   Struct                            |   Map
+|:----------:                         |------------------
+| 1. Values can be of different type  | 1. All values must be the same type. All keys must be the same type
+| 2. Value type  | 2. Reference type
+| 3. Keys don't support indexing | 3. Keys are indexed - we can iterate over them
+| 4. You need to know all the different fields at compile time | 4. Don't need to know all the keys at compile time
+| 5. Use to represent a "thing" with a lot of different properties | 5. USe the represent a collection of related properties
 
 
