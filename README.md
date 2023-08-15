@@ -19,7 +19,7 @@ with the go programming language by default.
 5. Receiver in Go is a special parameter in a method declaration that allows a type to define methods that can be called 
 on its instances. 
 
-* New project
+* Project "cards"
 1. Create *main.go* & *deck.go*
 2. Run 
 > go run main.go deck.go
@@ -28,5 +28,49 @@ on its instances.
 > go mod init <go_course> // <go_course>the name of working dir.
 * then run
 > go test
-4. 
+
+* Project "structs"
+1. Pointer operations
+> &variable - give the memory address of the value this variable in a pointing at
+> *pointer - give me the value this memory address is a pointing at
+Example:
+```yaml
+package main
+
+import "fmt"
+
+type contactInfo struct {
+	email   string
+	zipCode int
+}
+type person struct {
+	firstName string
+	lastName  string
+	contactInfo
+}
+
+func main() {
+	jim := person{
+		firstName: "Jim",
+		lastName:  "Party",
+		contactInfo: contactInfo{
+			email:   "jim@gmail.com",
+			zipCode: 0070707,
+		},
+	}
+	jimPointer := &jim
+	jimPointer.updateName("jimmy")
+	jim.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
+}
+func (p person) print() {
+	fmt.Printf("%+v", p)
+}
+
+```
+
+
 
