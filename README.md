@@ -79,12 +79,11 @@ Now the keys and the values themselves don't have to be of the same type, just a
 have to.
 
 * Diff Structs & Maps
-|   Struct                            |   Map
-|:----------:                         |------------------
+
+| Struct      | Map |
+| ----------- | ----------- |
 | 1. Values can be of different type  | 1. All values must be the same type. All keys must be the same type
 | 2. Value type  | 2. Reference type
 | 3. Keys don't support indexing | 3. Keys are indexed - we can iterate over them
 | 4. You need to know all the different fields at compile time | 4. Don't need to know all the keys at compile time
 | 5. Use to represent a "thing" with a lot of different properties | 5. USe the represent a collection of related properties
-
-
