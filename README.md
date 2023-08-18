@@ -1,4 +1,4 @@
-##### *GoLang: The complete Developer's Guide* #####
+# *GoLang: The complete Developer's Guide* #
 
 * Introduction
 1. Go is an open source programming language that Google developed. Software developers use Go in an array 
@@ -71,7 +71,7 @@ func (p person) print() {
 }
 ```
 * Maps
-# Map is a collection of key value pairs.
+> Map is a collection of key value pairs.
 Maps is that both the keys and the values are statically typed.
 So whenever we add some number of keys to a map and go, they must all be of the same exact type.
 And then all the different values that we add as well must also be of the exact same type.
@@ -87,3 +87,7 @@ have to.
 | 3. Keys don't support indexing | 3. Keys are indexed - we can iterate over them
 | 4. You need to know all the different fields at compile time | 4. Don't need to know all the keys at compile time
 | 5. Use to represent a "thing" with a lot of different properties | 5. USe the represent a collection of related properties
+
+* Interfaces
+>An interface type is defined as a set of method signatures.
+>A value of interface type can hold any value that implements those methods.
