@@ -91,3 +91,20 @@ have to.
 * Interfaces
 >An interface type is defined as a set of method signatures.
 >A value of interface type can hold any value that implements those methods.
+
+* Open & Read File(lab4)
+> go build main.go
+> ./main main.go
+
+* Goroutins & Channels
+A goroutine is a lightweight thread managed by the Go runtime.
+> go f(x, y, z)
+starts a new goroutine running
+> f(x, y, z)
+The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.
+
+Goroutines run in the same address space, so access to shared memory must be synchronized. The sync package provides useful primitives, although you won't need them much in Go as there are other primitives.
+Example:
+| go      | checkLink(link) |
+| ----------- | ----------- |
+| Create a new thread go routine| ...And run this function with it|
